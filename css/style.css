@@ -42,8 +42,6 @@ ul li:hover {
 }
 .container {
   width: 1200px;
-  display: flex;
-  justify-content: center;
 }
 .nav-items {
   display: flex;
@@ -59,6 +57,10 @@ ul input {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+.banner-item{
+    display: flex;
+    justify-content: center;
 }
 .banner-items{
     color: white;
@@ -90,4 +92,70 @@ ul input {
 #supporters{
     text-align: center;
     margin-bottom: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-item hr{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.input-item{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+.input-item input{
+    height: 40px;
+    width: 35%;
+    padding: 6px 12px;
+    outline: none;
+}
+.input-item button{
+    padding: 0px 12px;
+    background-color: var(--nav-color);
+    border: none;
+    /* border-radius: 5px; */
+    color: white;
+    cursor: pointer;
+}
+.meal-icons{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.latest{
+    margin-top: 20px;
+}
+#latest{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.image-container{
+    width: 250px;
+    height: 250px;
+    color: #d57d1f;
+    text-align: center;
+    font-size: 18px;
+}
+.image-container img{
+    width: 250px;
+    height: 250px;
+}
+.latest-meals{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
 }
