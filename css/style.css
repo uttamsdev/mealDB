@@ -157,5 +157,116 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 50px;
+    margin-bottom: 70px;
+}
+.latest hr{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     margin-bottom: 50px;
+}
+.ingredients hr{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.ingredients-container{
+    width: 250px;
+    height: 250px;
+}
+.ingredients img{
+    width: 250px;
+    height: 250px;
+}
+.ingredients-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.ingredients{
+    color: #d57d1f;
+    text-align: center;
+}
+#ingredients{
+    color: white;
+    margin-top: 10px;
+}
+
+.ingredients hr{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 80px;
+}
+.random-meals{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    margin-bottom: 70px;
+}
+#random-meal{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ingredient-hr{
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.country{
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+}
+.browse-country p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.browse{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.browse-by-name p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.names a{
+    color: #d57d1f;
+    font-weight: 900;
+
+}
+.slash{
+    color: white;
+}
+footer{
+    background-color:#23180D;
+    height: 150px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+}
+.footer-menu a{
+    margin-right: 20px;
+}
+.footer-menu a:hover{
+    color: red;
+}
+.footer-image img{
+    margin-right: 15px;
+}
+.span{
+    font-weight: bolder;
+    font-size: 18px;
 }
