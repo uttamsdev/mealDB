@@ -1,48 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    list-style: none;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
-:root{
-    --header-bg: #23180d;
-    --nav-color: #C52D2F;
+body{
+     background-color: var(--bg-color);
 }
-nav{
-    height: 100px;
-    background-color: var(--header-bg);
+:root {
+  --header-bg: #23180d;
+  --nav-color: #c52d2f;
+  --bg-color: #2d2013;
+}
+nav {
+  height: 100px;
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px 8px;
+}
+ul li a {
+  color: white;
+  font-size: 18px;
+}
+ul li:hover {
+  background-color: var(--nav-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+#active {
+  background-color: var(--nav-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul input {
+  width: 120px;
+  height: 35px;
+  padding-left: 5px;
+}
+.banner{
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
-ul li{
-    display: inline-block;
-    margin-right: 15px;
-    padding: 5px 8px;
-}
-ul li a{
+.banner-items{
     color: white;
-    font-size: 18px;
 }
-ul li:hover{
-    background-color: var(--nav-color);
-     padding: 5px 8px;
-     border-radius: 5px;
+.banner-items h1{
+    text-align: center;
 }
-#active{
-    background-color: var(--nav-color);
-    padding: 5px 8px;
+.banner-items p{
+    font-size: 19px;
+}
+.banner-items a button{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    background-color: #FFC439;
+    padding: 4px 12px;
     border-radius: 5px;
-}
-.container{
-    width: 1200px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-ul input{
-    width: 120px;
-    height: 35px;
+.banner-items button img{
+    width: 70px;
+}
+#supporters{
+    text-align: center;
+    margin-bottom: 60px;
 }
