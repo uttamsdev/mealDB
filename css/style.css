@@ -308,3 +308,30 @@ footer a {
 #preloader{
   display: none;
 }
+.food-details{
+  width: 800px;
+  height: auto;
+  color: white;
+  margin-top: 40px;
+}
+.food-details h4{
+  color: #ffc439;
+  text-align: center;
+}
+.food-details p{
+  font-size: 19px;
+}
+.food-details button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background-color: #c52d2f;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.food-details a{
+  color: white;
+}
