@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --header-bg: #23180d;
+    --nav-color: #C52D2F;
+}
+nav{
+    height: 100px;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 8px;
+}
+ul li a{
+    color: white;
+    font-size: 18px;
+}
+ul li:hover{
+    background-color: var(--nav-color);
+     padding: 5px 8px;
+     border-radius: 5px;
+}
+#active{
+    background-color: var(--nav-color);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul input{
+    width: 120px;
+    height: 35px;
+}
