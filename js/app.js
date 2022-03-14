@@ -1,12 +1,15 @@
 const loadFoods = () => {
+    document.getElementById('preloader').style.display = 'block';
     const inputField = document.getElementById('input-field');
     const inputFieldValue =inputField.value;
+    
     document.getElementById('main').style.display = "none";
     document.getElementById('footer').style.display = "none";
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputFieldValue}`)
     .then(response => response.json())
     .then(data => displayFoods(data.meals))
     inputField.value = '';
+    
 }
 
 const displayFoods = foods => {
@@ -25,4 +28,5 @@ const displayFoods = foods => {
         console.log('hello');
         console.log(food.strMeal);
     })
+    document.getElementById('preloader').style.display = 'none';
 }

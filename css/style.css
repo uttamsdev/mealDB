@@ -305,3 +305,6 @@ footer a {
   grid-column-gap: 80px;
   margin-top: 50px;
 }
+#preloader{
+  display: none;
+}
