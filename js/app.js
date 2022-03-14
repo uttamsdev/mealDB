@@ -3,6 +3,7 @@ const loadFoods = () => {
     const inputField = document.getElementById('input-field');
     const inputFieldValue =inputField.value;
 
+    document.getElementById('display-search-result').innerHTML = '';
     document.getElementById('main').style.display = "none";
     document.getElementById('footer').style.display = "none";
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputFieldValue}`)
@@ -14,6 +15,7 @@ const loadFoods = () => {
 
 const displayFoods = foods => {
     console.log(foods);
+    // document.getElementById('display-search-result').innerHTML = '';
     const searchResult = document.getElementById('display-search-result');
     searchResult.textContent = '';
     foods.forEach(food => {
